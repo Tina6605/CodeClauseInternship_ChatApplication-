@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="nameModal" class="modal">
+        <div class="modal-content">
+            <h2>Enter your name</h2>
+            <input type="text" id="username-input" placeholder="Your name">
+            <button id="join-chat-button">Join Chat</button>
+        </div>
+    </div>
+    <div id="chat-container" style="display: none;">
+        <div class="rooms">
+            <h3>Rooms</h3>
+            <ul>
+                <li><a href="#" onclick="joinRoom('Room 1')">Room 1</a></li>
+                <li><a href="#" onclick="joinRoom('Room 2')">Room 2</a></li>
+            </ul>
+        </div>
+        <div class="chat">
+            <h3 id="room-title">Select a room</h3>
+            <div id="messages"></div>
+            <form id="message-form">
+                <input type="text" id="message-input" placeholder="Type a message...">
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

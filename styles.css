@@ -1,0 +1,121 @@
+/* Add these styles for the modal */
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: #1390c2;
+  margin: auto;
+  padding: 50px;
+  border: 2px solid #000000;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+}
+
+#chat-container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+}
+
+.rooms {
+  width: 20%;
+  padding: 20px;
+  border-right: 1px solid #000000;
+  background-color: #cdf8fd;
+}
+
+.rooms h3 {
+  margin-bottom: 10px;
+}
+
+.rooms ul {
+  list-style: none;
+  padding: 0;
+}
+
+.rooms ul li {
+  margin-bottom: 10px;
+}
+
+.rooms ul li a {
+  text-decoration: none;
+  color: #1163dd;
+  font-weight: bold;
+}
+
+.rooms ul li a:hover {
+  text-decoration: underline;
+}
+
+.chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #fbfcd6;
+}
+
+#room-title {
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  margin: 0;
+}
+
+#messages {
+  flex: 1;
+  padding: 20px;
+  overflow-y: scroll;
+  border-bottom: 1px solid #ccc;
+}
+
+#messages .message {
+  margin-bottom: 10px;
+}
+
+#messages .message span {
+  font-size: 0.8em;
+  color: #666;
+}
+
+#message-form {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+#message-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
